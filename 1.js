@@ -1,20 +1,23 @@
-var __i=0;
+var _i=0;
+var _len=0;
 (function(){
-	__favimg=$j("div.favorite_list a img");
-	__favimg.css("position","absolute");
-	__imgs = jQuery.makeArray(__favimg);
-	__h=$j("html").height();
+	_favimg=$j("div.favorite_list a img");
+	_len = _favimg.length;
+	_h=$j("html").height();
 	
-	intid=setInterval(mloop, 1000);
+	if(_len){intid=setInterval(mloop, 500);}
+	
+	jQuery.each(_favimg, function() {
+	   $j(this).css("left", this.x+"px");
+	});
+	_favimg.css("position","absolute");
 	
 	function mloop(){
-		var _y= -__h-__imgs[__i].y;
-		__imgs[__i].animate({
-			top: "-="+_y+"px"}
-			, 5000, "linear");
-		__i++;
-		if(__imgs[__i]==undefined){clearInterval(intid);}
+		var _y = _h-_favimg[_i].y;
+		$j("div.favorite_list a img:eq("+_i+")").animate({
+			top: "-="+_h+"px"}
+			, 8000, "linear");
+		_i++;
+		if(_i>=_len){clearInterval(intid);}
 	}
-	
- 	 
 })();
