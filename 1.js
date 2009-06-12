@@ -9,7 +9,7 @@ var __i=0;(function(){
 		var _y= -__h-__favimg[__i].y;
 		__favimg[__i].animate({
 			top: "-="+_y+"px"}
-			, 5000, "linear")
+			, 5000, "linear");
 		__i++;
 		if(__favimg[__i]==undefined){clearInterval(intid);}
 	}
