@@ -8,7 +8,6 @@ var __i=0;(function(){
 	function mloop(){
 		var _y= -__h-__favimg[__i].y;
 		__favimg[__i].animate({
-    		left: "+=250px",
 			top: "-="+_y+"px"}
 			, 5000, "linear")
 		__i++;
