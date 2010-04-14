@@ -1,0 +1,7 @@
+アドレスバーにペースト
+
+その1
+javascript:(function(){var d=document; var s=d.createElement('script'); s.charset='UTF-8'; s.src='http://github.com/benchan/wass/raw/master/1.js?';+(new Date()).getTime(); d.body.appendChild(s)})();
+
+その2
+javascript:(function(){var d=document; var s=d.createElement('script'); s.charset='UTF-8'; s.src='http://github.com/benchan/wass/raw/master/0.js?';+(new Date()).getTime(); d.body.appendChild(s)})();
