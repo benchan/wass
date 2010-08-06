@@ -5,7 +5,7 @@ var _len=0;
 	_len = _favimg.length;
 	_h=$j("html").height();
 	
-	if(_len){intid=setInterval(mloop, 500);}
+	if(_len){intid=setInterval(mloop, 300);}
 	
 	jQuery.each(_favimg, function() {
 	   $j(this).css("left", this.x+"px");
