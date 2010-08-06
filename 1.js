@@ -9,6 +9,7 @@ var _len=0;
 	
 	jQuery.each(_favimg, function() {
 	   $j(this).css("left", this.x+"px");
+	   $j(this).css("top", this.y+"px");
 	});
 	_favimg.css("position","absolute");
 	
